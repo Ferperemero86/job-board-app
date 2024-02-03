@@ -4,7 +4,7 @@ module.exports = {
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     'plugin:prettier/recommended',
-    'prettier/vue',
+    'eslint-config-prettier',
   ],
   rules: {
     'vue/singleline-html-element-content-newline': 'off',
