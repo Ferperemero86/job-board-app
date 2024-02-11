@@ -39,6 +39,11 @@ services:
       context: ./server
     ports:
       - 8000:8000
+    environment:
+      POSTGRES_HOSTNAME: db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_DB: mydatabase
     develop:
       watch:
         - path: ./server

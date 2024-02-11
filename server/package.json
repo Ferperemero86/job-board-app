@@ -8,17 +8,22 @@
     "browser": true
   },
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "npm run prisma:dev && nodemon index.js",
+    "prisma:dev": "npx prisma migrate dev --name init && npm run prisma:seed",
+    "prisma:seed": "node prisma/seeds/seed.js"
   },
   "dependencies": {
     "@hapi/hapi": "^21.3.3",
+    "@prisma/client": "^5.9.1",
     "create-require": "^1.1.1",
+    "dotenv": "^16.4.2",
     "hapi-cors-headers": "^1.0.3",
     "pg": "^8.11.3",
     "postgres": "^3.4.3",
     "vue": "^3.3.11"
   },
   "devDependencies": {
-    "nodemon": "^3.0.3"
+    "nodemon": "^3.0.3",
+    "prisma": "^5.9.1"
   }
 }
