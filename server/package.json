@@ -1,0 +1,24 @@
+{
+  "name": "job-board-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.3.3",
+    "create-require": "^1.1.1",
+    "hapi-cors-headers": "^1.0.3",
+    "pg": "^8.11.3",
+    "postgres": "^3.4.3",
+    "vue": "^3.3.11"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
