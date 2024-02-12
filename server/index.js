@@ -1,12 +1,4 @@
 import Hapi from '@hapi/hapi'
-import dotenv from 'dotenv'
-dotenv.config()
-
-//import { createRequire } from 'module'
-//const require = createRequire(import.meta.url)
-
-//const { PrismaClient } = require('@prisma/client')
-
 import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()

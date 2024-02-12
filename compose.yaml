@@ -7,6 +7,7 @@ services:
     restart: always
     ports:
       - 5173:5173
+
     develop:
       watch:
         - path: ./
@@ -44,6 +45,8 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: mysecretpassword
       POSTGRES_DB: mydatabase
+      DATABASE_URL: ${DB_URL}
+
     develop:
       watch:
         - path: ./server

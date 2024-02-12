@@ -14,9 +14,6 @@
     "format": "npx prettier . --write"
   },
   "dependencies": {
-    "@hapi/hapi": "^21.3.3",
-    "pg": "^8.11.3",
-    "postgres": "^3.4.3",
     "vue": "^3.3.11"
   },
   "devDependencies": {
